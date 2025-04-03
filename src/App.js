@@ -1,10 +1,20 @@
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import Footer from './Footer';
+import Main from './Main';
+import Menu from './Menu';
+import Nav from './Nav';
 
 function App() {
   return (
-    <div className="App">
-      Home
-    </div>
+    <>
+    <Nav/>
+    <BrowserRouter>
+    <Main/>
+    </BrowserRouter>
+    <Menu/>
+    <Footer/>
+    </>
   );
 }
 
